@@ -14,66 +14,59 @@ body {
 }
 
 .fa-star {
-  color: #F2F2F2;
-}
-
-.fa-star:hover {
   color: #0065FC;
 }
 
-.fa-star:active {
-  color: #0065FC;
-}
 
 /* EN-TETE */
 
 #logo {
-  float: left;
-}
-
-#menu {
-
-  display: flex;
-  justify-content: flex-end;
 }
 
 #en_tete {
-  margin-bottom: 70px;
+  margin-bottom: 20px;
   margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 a{
-	color: #0065FC;
-	text-decoration: none;
-  margin-left: 20px;
+  color: #0065FC;
+  text-decoration: none;
 }
 
 #navigation {
-  list-style: none;
+  width: 100%;
+  height: 20px;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 #navigation li a {
   text-decoration: none ;
   color: #000;
-  padding: 4px 10px ;
 }
 
 #navigation li a:hover, #navigation li a:active {
-  text-decoration: underline ;
+  border-bottom: 3px solid #0065FC;
   color: #0065FC;
 }
 
 #navigation li {
-	display: inline;
+  display: inline;
+  list-style: none;
+  margin: 0 70px;
+  border-bottom: 3px solid #F2F2F2;
 }
+
 
 
 /* CONTENU PAGE */
 
-.formulaire p {
-  margin-top: -10px;
+.titre_page p {
+  margin-top: -15px;
   margin-bottom: 30px;
 }
 
@@ -82,13 +75,14 @@ a{
 
 #recherche {
   display: flex;
+  margin-bottom: 40px;
 }
 
 #geolocalisation {
   background-color: #F2F2F2;
   height: 30px;
   width: 30px;
-  border-radius: 5px 0 0 5px;
+  border-radius: 8px 0 0 8px;
 }
 
 .fa-map-marker-alt {
@@ -104,7 +98,7 @@ input[type=search] {
 
 input[type=submit] {
   border: 0.5px solid #F2F2F2;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 8px 8px 0;
   background-color: #0065FC;
   font-family: inherit;
   font-weight: bold;
@@ -113,10 +107,72 @@ input[type=submit] {
   margin: -5px;
 }
 
-#filtre_eco {
-  display: flex;
-} 
+/* filtres */
 
+.filtre_curseur {
+  display: flex;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.bulle_filtre {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: #DEEBFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.form_filter {
+  border: 1px solid grey;
+  border-radius: 40px;
+  height: 38px;
+  width: auto;
+  margin-left: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.name_filter {
+  margin-left: 40px;
+}
+
+#filtres i {
+  color: #0065FC;
+}
+
+#filtres {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -15px;
+}
+
+.fa-info {
+  color: #0065FC;
+}
+
+#informations {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+
+#icone_info {
+  border: 0.5px solid #F2F2F2;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
 
 /* section 1 Les plus populaires */
 
@@ -127,14 +183,14 @@ input[type=submit] {
   margin-top: 10px;
 }
 
-#fond_vignette_pop {
+.fond_vignette_pop {
   background-color: #fff;
   border-radius: 10px;
   height: 200px;
   margin-bottom: 20px;
 }
 
-#hebergements_pop {
+.hebergements_pop {
   border-radius: 10px 0px 0px 10px;
   margin: 10px;  
   height: 180px;
@@ -143,13 +199,13 @@ input[type=submit] {
   float: left;
 }
 
-#description_vignette_pop {
+.description_vignette_pop {
   display: flex;
   flex-direction: column;
   padding-left: 30px;
 }
 
-#description_vignette_pop p {
+.description_vignette_pop p {
   margin-top: 10px;
   margin-bottom: 50px;
 }
@@ -166,7 +222,7 @@ input[type=submit] {
   color:#000;
 }
 
-#fond_vignette_heb {
+.fond_vignette_heb {
   background-color: #fff;
   border: 0.5px solid #F2F2F2;
   border-radius: 10px;
@@ -175,7 +231,7 @@ input[type=submit] {
   margin-bottom: 20px;
 }
 
-#hebergements_ville {
+.hebergements_ville {
   border-radius: 10px 10px 0px 0px;
   margin: 0px;  
   height: 150px;
@@ -183,14 +239,14 @@ input[type=submit] {
   object-fit: cover;
 }
 
-#description_vignette_heb {
+.description_vignette_heb {
   display: flex;
   flex-direction: column;
   padding-left: 10px;
   margin-top: -15px;
 }
 
-#description_vignette_heb p {
+.description_vignette_heb p {
   margin-top: -12px;
 }
 
@@ -203,7 +259,7 @@ input[type=submit] {
   margin-top: 10px;
 }
 
-#fond_vignette_act {
+.fond_vignette_act {
   background-color: #fff;
   border: 0.5px solid #F2F2F2;
   border-radius: 10px;
@@ -212,7 +268,7 @@ input[type=submit] {
   margin-bottom: 20px;
 }
 
-#activites_ville {
+.activites_ville {
   border-radius: 10px 10px 0px 0px;
   margin: 0px;  
   height: 180px;
@@ -220,7 +276,7 @@ input[type=submit] {
   object-fit: cover;
 }
 
-#description_vignette_act {
+.description_vignette_act {
   padding-left: 10px;
 }
 
@@ -246,7 +302,7 @@ footer {
 }
 
 ul {
-  margin-left: -50px;
+  margin-left: -30px;
 }
 
 li {

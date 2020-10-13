@@ -8,39 +8,35 @@
 </head>
 <body>
 
- <!--
-  ----------------------
-       EN-TETE PAGE
-  ----------------------
-  -->
+ <!-- EN-TETE PAGE  -->
   
   <header>
 
 <div id="en_tete">
     <img src="images/logo/Reservia.svg" alt="logo Reservia" id="logo"/>
+    
+    <div id="inscription">
+      <a href="#"><strong>S'inscrire</strong></a>
+    </div>
+    </div>
 
-<div id="menu">
     <nav>
-      <ul id="navigation">
-        <li><a href="#ancre_hebergement">Hébergements</a></li>
+      <div id="navigation">
+        <ul>
+          <li><a href="#ancre_hebergement">Hébergements</a></li>
         <li><a href="#ancre_activite">Activités</a></li>
       </ul>
     </nav>
 
-    <a href="#"><strong>S'inscrire</strong></a>
-</div>
-</div>
+
+
 
   </header>
 
- <!--
-  ----------------------
-       CONTENU PAGE
-  ----------------------
-  -->
+ <!-- CONTENU PAGE -->
 <main>
 
-    <section class="formulaire">
+    <section class="titre_page">
       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
       <p>En plein centre ville ou en pleine nature</p>
 
@@ -54,14 +50,59 @@
       </form>
   </div>
 
-  <div id="filtres">
-    <h3>Filtres</h3>
-    <div id="filtre_eco">
-      </i><i class="fas fa-star"></i>
-    <div class="bulle">
-    <p>Economique</p>
-       </div> 
-    </div>
+<!-- filtres -->
+
+      <h3>Filtres</h3>
+
+<div id="filtres"> 
+
+  <div class="filtre_curseur">
+      <div class="bulle_filtre">
+          <i class="fas fa-money-bill-wave"></i>
+      </div>
+      <div class="form_filter">
+        <div class="name_filter">Economique</div> 
+      </div>
+  </div>
+
+  <div class="filtre_curseur">
+      <div class="bulle_filtre">
+          <i class="fas fa-child"></i>
+      </div>
+      <div class="form_filter">
+        <div class="name_filter">Familial</div> 
+      </div>
+  </div>
+
+  <div class="filtre_curseur">
+      <div class="bulle_filtre">
+          <i class="fas fa-heart"></i>
+      </div>
+      <div class="form_filter">
+        <div class="name_filter">Romantique</div> 
+      </div>
+  </div>
+
+  <div class="filtre_curseur">
+      <div class="bulle_filtre">
+          <i class="fas fa-dog"></i>
+      </div>
+      <div class="form_filter">
+        <div class="name_filter">Animaux autorisés</div> 
+      </div>
+  </div>
+</div>
+
+<div id="informations">
+  <div id="icone_info">
+  <i class="fas fa-info"></i></div>
+  <div id="phrase_info">
+  Plus de 500 logements sont disponibles dans cette ville
+</div>
+</div>
+
+
+
   </div>
     </section>
 
@@ -69,9 +110,9 @@
     <section id="fond_populaire">
       <h2>Les plus populaires</h2>
 
-      <div id="fond_vignette_pop">
-        <img src="images/hebergements/small/hotel_soleil.jpg" alt=photo_hotel_soleil_du_matin id="hebergements_pop"/>
-        <div id="description_vignette_pop">
+      <div class="fond_vignette_pop">
+        <img class="hebergements_pop" src="images/hebergements/small/hotel_soleil.jpg" alt=photo_hotel_soleil_du_matin />
+        <div class="description_vignette_pop">
           <h3>Hôtel Le Soleil du matin</h3>
           <p>Nuit à partir de 128€</p>
           <div class="avis">
@@ -81,25 +122,25 @@
       </div>
 
 
-      <div id="fond_vignette_pop">
-        <img src="images/hebergements/small/hotel_coeur_eau.jpg" alt=photo_hotel_coeur_eau id="hebergements_pop"/>
-        <div id="description_vignette_pop">
+      <div class="fond_vignette_pop">
+        <img class="hebergements_pop" src="images/hebergements/small/hotel_coeur_eau.jpg" alt=photo_hotel_coeur_eau/>
+        <div class="description_vignette_pop">
           <h3>Au cœur de l'eau Chambres d'hôtes</h3>
           <p>Nuit à partir de 71€</p>
           <div class="avis">
-          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star" style="color:#F2F2F2"></i>
         </div>
       </div> 
       </div>
 
 
-      <div id="fond_vignette_pop">
-        <img src="images/hebergements/small/hotel_bleu_blanc.jpg" alt=photo_hotel_bleu_blanc id="hebergements_pop"/>
-        <div id="description_vignette_pop">
+      <div class="fond_vignette_pop">
+        <img class="hebergements_pop" src="images/hebergements/small/hotel_bleu_blanc.jpg" alt=photo_hotel_bleu_blanc/>
+        <div class="description_vignette_pop">
           <h3>Hôtel Tout bleu et Blanc</h3>
           <p>Nuit à partir de 68€</p>
           <div class="avis">
-          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star" style="color:#F2F2F2"></i>
         </div>
       </div>
       </div>    
@@ -109,20 +150,20 @@
     <section id="fond_hebergement">
       <h2 id="ancre_hebergement">Hébergements à Marseille</h2>
 
-          <div id="fond_vignette_heb">
-          <img src="images/hebergements/small/auberge_cannebiere.jpg" alt=photo_auberge_cannebiere id="hebergements_ville"/>
-          <div id="description_vignette_heb">
+          <div class="fond_vignette_heb">
+          <img class="hebergements_ville" src="images/hebergements/small/auberge_cannebiere.jpg" alt=photo_auberge_cannebiere/>
+          <div class="description_vignette_heb">
           <h3>Auberge La Cannebière</h3>
           <p>Nuit à partir de 25€</p>
           <div class="avis">
-          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star" style="color:#F2F2F2"></i>
         </div>
         </div>
         </div>
 
-          <div id="fond_vignette_heb">
-          <img src="images/hebergements/small/hotel_port.jpg" alt=photo_hotel_port id="hebergements_ville"/>
-          <div id="description_vignette_heb">
+          <div class="fond_vignette_heb">
+          <img class="hebergements_ville" src="images/hebergements/small/hotel_port.jpg" alt=photo_hotel_port/>
+          <div class="description_vignette_heb">
           <h3>Hôtel du Port</h3>
           <p>Nuit à partir de 52€</p>
           <div class="avis">
@@ -131,42 +172,42 @@
         </div>
         </div>
 
-          <div id="fond_vignette_heb">
-          <img src="images/hebergements/small/hotel_mouette.jpg" alt=photo_hotel_mouette id="hebergements_ville"/>
-          <div id="description_vignette_heb">
+          <div class="fond_vignette_heb">
+          <img class="hebergements_ville" src="images/hebergements/small/hotel_mouette.jpg" alt=photo_hotel_mouette/>
+          <div class="description_vignette_heb">
           <h3>Hôtel Les mouettes</h3>
           <p>Nuit à partir de 76€</p>
           <div class="avis">
-          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star" style="color:#F2F2F2"></i>
         </div>
         </div>
         </div>
 
-           <div id="fond_vignette_heb">
-          <img src="images/hebergements/small/hotel_mer.jpg" alt=photo_hotel_mer id="hebergements_ville"/>
-          <div id="description_vignette_heb">
+           <div class="fond_vignette_heb">
+          <img class="hebergements_ville" src="images/hebergements/small/hotel_mer.jpg" alt=photo_hotel_mer/>
+          <div class="description_vignette_heb">
           <h3>Hôtel de la mer</h3>
           <p>Nuit à partir de 46€</p>
           <div class="avis">
-          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star" style="color:#F2F2F2"></i><i class="fas fa-star" style="color:#F2F2F2"></i>
         </div>
         </div>
         </div>
 
-           <div id="fond_vignette_heb">
-          <img src="images/hebergements/small/auberge_panier.jpg" alt=photo_auberge_panier id="hebergements_ville"/>
-          <div id="description_vignette_heb">
+           <div class="fond_vignette_heb">
+          <img class="hebergements_ville" src="images/hebergements/small/auberge_panier.jpg" alt=photo_auberge_panier/>
+          <div class="description_vignette_heb">
           <h3>Auberge Le Panier</h3>
           <p>Nuit à partir de 23€</p>
           <div class="avis">
-          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star" style="color:#F2F2F2"></i>
         </div>
         </div>
         </div>
 
-           <div id="fond_vignette_heb">
-          <img src="images/hebergements/small/hotel_amina.jpg" alt=photo_hotel_amina id="hebergements_ville"/>
-          <div id="description_vignette_heb">
+           <div class="fond_vignette_heb">
+          <img class="hebergements_ville" src="images/hebergements/small/hotel_amina.jpg" alt=photo_hotel_amina/>
+          <div class="description_vignette_heb">
           <h3>Hôtel Chez Amina</h3>
           <p>Nuit à partir de 96€</p>
           <div class="avis">
@@ -182,44 +223,44 @@
     <section id="fond_activite">
       <h2 id="ancre_activite">Activités à Marseille</h2>
 
-          <div id="fond_vignette_act">
-            <img src="images/activites/small/vieux_port.jpg" alt=photo_vieux_port id="activites_ville"/>
-          <div id="description_vignette_act">
+          <div class="fond_vignette_act">
+            <img class="activites_ville" src="images/activites/small/vieux_port.jpg" alt=photo_vieux_port/>
+          <div class="description_vignette_act">
           <h3>Vieux Port</h3>
           </div>
         </div>
 
-          <div id="fond_vignette_act">
-            <img src="images/activites/small/fort_pomegues.jpg" alt=photo_fort_pomegues id="activites_ville"/>
-          <div id="description_vignette_act">
+          <div class="fond_vignette_act">
+            <img class="activites_ville" src="images/activites/small/fort_pomegues.jpg" alt=photo_fort_pomegues/>
+          <div class="description_vignette_act">
           <h3>Fort de Pomègues</h3>
           </div>
         </div>
 
-          <div id="fond_vignette_act">
-            <img src="images/activites/small/iles_frioul.jpg" alt=photo_iles_frioul id="activites_ville"/>
-          <div id="description_vignette_act">
+          <div class="fond_vignette_act">
+            <img class="activites_ville" src="images/activites/small/iles_frioul.jpg" alt=photo_iles_frioul/>
+          <div class="description_vignette_act">
           <h3>Iles du Frioul</h3>
           </div>
         </div>
 
-          <div id="fond_vignette_act">
-            <img src="images/activites/small/parc_calanques.jpg" alt=photo_parc_calanques id="activites_ville"/>
-          <div id="description_vignette_act">
+          <div class="fond_vignette_act">
+            <img class="activites_ville" src="images/activites/small/parc_calanques.jpg" alt=photo_parc_calanques/>
+          <div class="description_vignette_act">
           <h3>Parc national des Calanques</h3>
           </div>
         </div>
 
-          <div id="fond_vignette_act">
-            <img src="images/activites/small/ND_garde.jpg" alt=photo_ND_garde id="activites_ville"/>
-          <div id="description_vignette_act">
+          <div class="fond_vignette_act">
+            <img class="activites_ville" src="images/activites/small/ND_garde.jpg" alt=photo_ND_garde/>
+          <div class="description_vignette_act">
           <h3>Notre-Dame-de-la-Garde</h3>
           </div>
         </div>
 
-          <div id="fond_vignette_act">
-            <img src="images/activites/small/parc_longchamp.jpg" alt=photo_parc_longchamp id="activites_ville"/>
-          <div id="description_vignette_act">
+          <div class="fond_vignette_act">
+            <img class="activites_ville" src="images/activites/small/parc_longchamp.jpg" alt=photo_parc_longchamp/>
+          <div class="description_vignette_act">
           <h3>Parc Longchamp</h3>
           </div>
         </div>
@@ -228,11 +269,7 @@
 
 </main>
 
-  <!--
-  ----------------------
-       PIED PAGE
-  ----------------------
-  -->
+  <!-- PIED PAGE -->
   <footer>
 
     <div class="footer">
