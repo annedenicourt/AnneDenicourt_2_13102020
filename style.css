@@ -1,0 +1,263 @@
+/* GENERAL */
+
+@font-face {
+    font-family: 'raleway-variableFont_wght';
+    src: url('font/raleway-variableFont_wght.ttf') format('truetype');
+}
+
+body {
+	font-family: 'raleway-variableFont_wght', Sans serif;
+}
+
+.avis {
+  display: flex;
+}
+
+.fa-star {
+  color: #F2F2F2;
+}
+
+.fa-star:hover {
+  color: #0065FC;
+}
+
+.fa-star:active {
+  color: #0065FC;
+}
+
+/* EN-TETE */
+
+#logo {
+  float: left;
+}
+
+#menu {
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+#en_tete {
+  margin-bottom: 70px;
+  margin-top: 20px;
+}
+
+a{
+	color: #0065FC;
+	text-decoration: none;
+  margin-left: 20px;
+}
+
+#navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navigation li a {
+  text-decoration: none ;
+  color: #000;
+  padding: 4px 10px ;
+}
+
+#navigation li a:hover, #navigation li a:active {
+  text-decoration: underline ;
+  color: #0065FC;
+}
+
+#navigation li {
+	display: inline;
+}
+
+
+/* CONTENU PAGE */
+
+.formulaire p {
+  margin-top: -10px;
+  margin-bottom: 30px;
+}
+
+
+/* formulaire de recherhe */
+
+#recherche {
+  display: flex;
+}
+
+#geolocalisation {
+  background-color: #F2F2F2;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px 0 0 5px;
+}
+
+.fa-map-marker-alt {
+  margin: 6px 9px;
+}
+
+input[type=search] {
+  border-width: 0.2px 0 0.2px 0;
+  border-color: #F2F2F2;
+  font-family: inherit;
+  height: 30px;
+}
+
+input[type=submit] {
+  border: 0.5px solid #F2F2F2;
+  border-radius: 0 5px 5px 0;
+  background-color: #0065FC;
+  font-family: inherit;
+  font-weight: bold;
+  color: #fff;
+  height: 30px;
+  margin: -5px;
+}
+
+#filtre_eco {
+  display: flex;
+} 
+
+
+/* section 1 Les plus populaires */
+
+
+#fond_populaire {
+  background-color: #F2F2F2;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#fond_vignette_pop {
+  background-color: #fff;
+  border-radius: 10px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+#hebergements_pop {
+  border-radius: 10px 0px 0px 10px;
+  margin: 10px;  
+  height: 180px;
+  width: 160px;
+  object-fit: cover;
+  float: left;
+}
+
+#description_vignette_pop {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+#description_vignette_pop p {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+/* section 2 Hebergements */
+
+#fond_hebergement {
+  background-color: #fff;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#fond_hebergement a {
+  color:#000;
+}
+
+#fond_vignette_heb {
+  background-color: #fff;
+  border: 0.5px solid #F2F2F2;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #F2F2F2;
+  height: 250px;
+  margin-bottom: 20px;
+}
+
+#hebergements_ville {
+  border-radius: 10px 10px 0px 0px;
+  margin: 0px;  
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+}
+
+#description_vignette_heb {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  margin-top: -15px;
+}
+
+#description_vignette_heb p {
+  margin-top: -12px;
+}
+
+/* section 3 Activites */
+
+
+#fond_activite {
+  background-color: #fff;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#fond_vignette_act {
+  background-color: #fff;
+  border: 0.5px solid #F2F2F2;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #F2F2F2;
+  height: 250px;
+  margin-bottom: 20px;
+}
+
+#activites_ville {
+  border-radius: 10px 10px 0px 0px;
+  margin: 0px;  
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+}
+
+#description_vignette_act {
+  padding-left: 10px;
+}
+
+
+
+
+
+/* PIED PAGE */
+
+footer {
+  background-color: #F2F2F2;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.footer {
+  margin-top: 40px;
+}
+
+.footer h3 {
+  padding-left: 10px;
+}
+
+ul {
+  margin-left: -50px;
+}
+
+li {
+	list-style: none;
+  margin-bottom: 8px;
+}
+
+li a {
+  color: #000;
+}
+
+
+/* Commentaires */
+
