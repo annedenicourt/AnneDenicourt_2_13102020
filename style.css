@@ -2,14 +2,14 @@
 
 @font-face {
     font-family: 'raleway-variableFont_wght';
-    src: url('font/raleway-variablefont_wght.eot') format('eot'),
-         url('font/raleway-variablefont_wght.ttf') format('truetype'),
-         url('font/raleway-variablefont_wght.woff') format('woff'),
-         url('font/raleway-variablefont_wght.svg') format('svg'),
-         url('font/raleway-bold.eot') format('eot'),
+    src: url('font/raleway-bold.eot') format('eot'),
          url('font/raleway-bold.ttf') format('truetype'),
          url('font/raleway-bold.woff') format('woff'),
          url('font/raleway-bold.svg') format('svg');
+    src: url('font/raleway-variablefont_wght.eot') format('eot'),
+         url('font/raleway-variablefont_wght.ttf') format('truetype'),
+         url('font/raleway-variablefont_wght.woff') format('woff'),
+         url('font/raleway-variablefont_wght.svg') format('svg');
 }
 
 body {
@@ -32,13 +32,21 @@ a {
 
 /* EN-TETE */
 
-#logo {
+header {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: -10px;
+}
+
+#inscription {
+  height: 30px;
 }
 
 #en_tete {
-  margin-bottom: 20px;
-  margin-top: 20px;
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -46,38 +54,51 @@ a {
 #en_tete a {
   color: #0065FC;
   text-decoration: none;
+  margin-right: 20px;
+}
+
+nav {
+  width: 100%;
 }
 
 #navigation {
   width: 100%;
-  height: 20px;
-  margin: 0;
-  padding: 0;
+  display: flex;
+}
+
+#menu_heb {
+  border-bottom: 3px solid #F2F2F2;
+  width: 250px;
+  height: 30px;
   text-align: center;
 }
 
-#navigation li a {
+#menu_act {
+  border-bottom: 3px solid #F2F2F2;
+  width: 250px;
+  height: 30px;
+  text-align: center;
+}
+
+#navigation a {
   text-decoration: none ;
   color: #000;
 }
 
-#navigation li a:hover, #navigation li a:active {
+#menu_heb:hover, #menu_heb:active {
   border-bottom: 3px solid #0065FC;
   color: #0065FC;
 }
 
-#navigation li {
-  display: inline;
-  list-style: none;
-  margin: 60px;
-  border-bottom: 3px solid #F2F2F2;
+#menu_act:hover, #menu_act:active {
+  border-bottom: 3px solid #0065FC;
+  color: #0065FC;
 }
-
 
 /* CONTENU PAGE */
 
 .titre_page p {
-  margin-top: -15px;
+  margin-top: -5px;
   margin-bottom: 30px;
 }
 
@@ -91,13 +112,14 @@ a {
 
 #geolocalisation {
   background-color: #F2F2F2;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   border-radius: 8px 0 0 8px;
+  text-align: center;
+  line-height: 40px;
 }
 
 .fa-map-marker-alt {
-  margin: 6px 9px;
 }
 
 input[type=search] {
@@ -105,7 +127,7 @@ input[type=search] {
   border-color: #F2F2F2;
   font-family: inherit;
   border-style: solid;
-  height: 30px;
+  height: 40px;
 }
 
 input[type=submit] {
@@ -115,7 +137,7 @@ input[type=submit] {
   font-family: inherit;
   font-weight: bold;
   color: #fff;
-  height: 30px;
+  height: 40px;
   margin: -5px;
 }
 
@@ -126,6 +148,7 @@ input[type=submit] {
   flex-wrap: wrap;
   margin-top: -15px;
 }
+
 
 .filtre_curseur {
   display: flex;
@@ -370,6 +393,63 @@ footer {
 /* Nouvelles règles si la fenêtre fait plus de 992px de large */
 
 @media screen and (min-width: 992px){
+
+/* Menu */
+
+
+#logo {
+  padding-top: 20px;
+}
+
+#en_tete {
+  flex-wrap: nowrap;
+}
+
+#inscription:nth-child(2) {
+  order:1;
+}
+
+#navigation {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#navigation a {
+  padding-top: 30px;
+}
+
+#menu_heb {
+  border-bottom: none;
+}
+
+#menu_act {
+  border-bottom: none;
+}
+
+#menu_heb:hover, #menu_heb:active {
+  border-top: 2px solid #0065FC;
+  border-bottom: none;
+  color: #0065FC;
+}
+
+#menu_act:hover, #menu_act:active {
+  border-top: 2px solid #0065FC;
+  border-bottom: none;
+  color: #0065FC;
+}
+
+#inscription {
+  padding-top: 30px;
+}
+
+/* Filtres */
+
+
+#section_filtres {
+  display: flex;
+  align-items: center;
+}
+
 
 /* Hebergements */
 
