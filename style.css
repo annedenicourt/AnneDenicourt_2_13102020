@@ -40,56 +40,48 @@ a {
   text-decoration: none;
 }
 
+h4 {
+  font-size: 1.1em; 
+}
+
 
 /* EN-TETE */
 
 header {
-  display: flex;
-  flex-wrap: wrap;
   width: 100%;
-  margin-top: -10px;
+  height: 100px;
 }
 
-#inscription {
-  height: 30px;
+#logo {
+  margin-right: 130px;
 }
 
-#en_tete {
-  width: 100%;
+nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 }
 
-#en_tete a {
+#inscription {
   color: #0065FC;
   text-decoration: none;
-  margin-right: 20px;
-}
-
-
-nav {
-  width: 100%;
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
 }
 
 #menu_heb {
   border-bottom: 3px solid #F2F2F2;
-  width: 240px;
+  width: 50%;
   height: 30px;
-  margin-left: 20px;
   text-align: center;
+  margin-top: 20px;
 }
 
 #menu_act {
   border-bottom: 3px solid #F2F2F2;
-  width: 240px;
+  width: 50%;
   height: 30px;
-  margin-left: -20px;
   text-align: center;
+  margin-top: 20px;
 }
 
 #navigation a {
@@ -311,7 +303,7 @@ color: #fff;
   display: flex;
   flex-direction: column;
   padding-left: 10px;
-  margin-top: -10px;
+  margin-top: -18px;
 }
 
 .description_vignette_heb p {
@@ -372,8 +364,6 @@ color: #fff;
   padding-left: 10px;
 }
 
-
-
 /* PIED PAGE */
 
 footer {
@@ -412,37 +402,47 @@ footer {
 
 /* Menu */
 
-
-#logo {
-  padding-top: 20px;
+header {
+  height: 50px;
+  margin-bottom: 40px;
 }
 
-#en_tete {
+#logo {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+
+nav {
   flex-wrap: nowrap;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 #inscription:nth-child(2) {
   order:1;
 }
 
-nav {
-  justify-content: flex-end;
-  width: 1100px;
-  margin-right: -50px;
-}
-
-#navigation a {
-  padding-top: 30px;
+#inscription {
+  height: 40px;
+  margin-top: 5px;
+  padding-top: 20px;
 }
 
 #menu_heb {
   border-bottom: none;
   width: 200px;
+  height: 40px;
+  margin-top: 5px;
+  padding-top: 20px;
 }
 
 #menu_act {
   border-bottom: none;
   width: 200px;
+  height: 40px;
+  margin-top: 5px;
+  padding-top: 20px;
 }
 
 #menu_heb:hover, #menu_heb:active {
@@ -455,10 +455,6 @@ nav {
   border-top: 2px solid #0065FC;
   border-bottom: none;
   color: #0065FC;
-}
-
-#inscription {
-  padding-top: 30px;
 }
 
 /* Filtres */
@@ -513,8 +509,8 @@ nav {
   height: 85px;
 }
 
-.description_vignette_heb h3 {
-  margin-top: 5px;
+.description_vignette_heb h4 {
+  margin-top: 12px;
 }
 
 
@@ -640,36 +636,47 @@ footer {
 
 /* Menu */
 
-#logo {
-  padding-top: 20px;
+header {
+  height: 50px;
+  margin-bottom: 40px;
 }
 
-#en_tete {
+#logo {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+
+nav {
   flex-wrap: nowrap;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 #inscription:nth-child(2) {
   order:1;
 }
 
-nav {
-  justify-content: flex-end;
-  width: 1100px;
-  margin-right: -50px;
-}
-
-#navigation a {
-  padding-top: 30px;
+#inscription {
+  height: 40px;
+  margin-top: 5px;
+  padding-top: 20px;
 }
 
 #menu_heb {
   border-bottom: none;
   width: 200px;
+  height: 40px;
+  margin-top: 5px;
+  padding-top: 20px;
 }
 
 #menu_act {
   border-bottom: none;
   width: 200px;
+  height: 40px;
+  margin-top: 5px;
+  padding-top: 20px;
 }
 
 #menu_heb:hover, #menu_heb:active {
@@ -682,10 +689,6 @@ nav {
   border-top: 2px solid #0065FC;
   border-bottom: none;
   color: #0065FC;
-}
-
-#inscription {
-  padding-top: 30px;
 }
 
 /* Les plus populaires */
@@ -721,7 +724,7 @@ nav {
   margin-top:-15px;
 }
 
-.description_vignette_pop h3 {
+.description_vignette_pop h4 {
   margin-top: -1px;
 }
 
@@ -742,12 +745,15 @@ nav {
 
 /* Activités */
 
+
+
 #all_vignettes_act {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   height: 400px;
-  margin-left: 15px;
+  width: 100%;
+  margin-left: 8px;
 }
 
 .fond_vignette_act_1 {
@@ -755,9 +761,9 @@ nav {
   border: 0.5px solid #F2F2F2;
   border-radius: 10px;
   box-shadow: 2px 2px 10px #F2F2F2;
-  height: 360px;
-  width: 23%;
-  margin-right: 10px;
+  height: 350px;
+  width: 22.5%;
+  margin-right: 12px;
 }
 
 .fond_vignette_act_1 .activites_ville {
@@ -774,9 +780,8 @@ nav {
   border-radius: 10px;
   box-shadow: 2px 2px 10px #F2F2F2;
   height: 180px;
-  width: 23%;
-  margin-right: 10px;
-
+  width: 22.5%;
+  margin-right: 12px;
 }
 
 .fond_vignette_act_2 .activites_ville {
@@ -792,23 +797,21 @@ nav {
   border: 0.5px solid #F2F2F2;
   border-radius: 10px;
   box-shadow: 2px 2px 10px #F2F2F2;
-  height: 160px;
-  width: 23%;
-  margin-right: 10px;
-
+  height: 150px;
+  width: 22.5%;
+  margin-right: 12px;
 }
 
 .fond_vignette_act_3 .activites_ville {
   border-radius: 10px 10px 0px 0px;
   margin: 0px;  
-  height: 100px;
+  height: 120px;
   width: 100%;
   object-fit: cover;
 }
 
-.description_vignette_act {
-  margin-top: -10px;
-
+.description_vignette_act h4 {
+  margin-top: 5px;
 }
 
 /* PIED PAGE */
