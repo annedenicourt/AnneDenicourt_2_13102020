@@ -106,7 +106,6 @@ nav {
   margin-bottom: 30px;
 }
 
-
 /* formulaire de recherhe */
 
 #recherche {
@@ -132,9 +131,10 @@ input[type=search] {
   font-family: inherit;
   border-style: solid;
   height: 40px;
+  text-align: center;
 }
 
-input[type=submit] {
+button {
   border: 0.5px solid #F2F2F2;
   border-radius: 0 8px 8px 0;
   background-color: #0065FC;
@@ -142,9 +142,13 @@ input[type=submit] {
   font-weight: bold;
   color: #fff;
   height: 40px;
+  width: 30px;
   margin: -5px;
 }
 
+#hidden_text {
+  display: none
+}
 /* filtres */
 
 #filtres {
@@ -457,6 +461,29 @@ nav {
   color: #0065FC;
 }
 
+/* Formulaire */
+
+#geolocalisation {
+}
+
+button {
+  width: 110px;
+}
+
+#hidden_text {
+  display: inline;
+  color: #fff;
+  font-weight: bold;
+  margin-left: -95px;
+  height: 20px;
+  margin-left: 0px;
+}
+
+button .fa-search {
+  display: none;
+  
+}
+
 /* Filtres */
 
 
@@ -501,16 +528,25 @@ nav {
 .hebergements_ville {
   width: 89%;
   height: 140px;
-  margin: 10px 10px; 
+  margin: auto; 
 }
 
 .description_vignette_heb {
   margin-left: 3px;
-  height: 85px;
+  height: 80px;
 }
 
 .description_vignette_heb h4 {
-  margin-top: 12px;
+  margin-top: 5px;
+}
+
+.description_vignette_heb p {
+  margin-top: -15px;
+}
+
+.avis {
+  position: relative;
+  top: -5px;
 }
 
 
