@@ -480,8 +480,7 @@ button {
 }
 
 button .fa-search {
-  display: none;
-  
+  display: none; 
 }
 
 /* Filtres */
@@ -619,7 +618,6 @@ button .fa-search {
   height: 250px;
   width: 24%;
   margin-right: 0px;
-
 }
 
 .fond_vignette_act_2 .activites_ville {
@@ -725,6 +723,28 @@ nav {
   border-top: 2px solid #0065FC;
   border-bottom: none;
   color: #0065FC;
+}
+
+/* Formulaire */
+
+#geolocalisation {
+}
+
+button {
+  width: 110px;
+}
+
+#hidden_text {
+  display: inline;
+  color: #fff;
+  font-weight: bold;
+  margin-left: -95px;
+  height: 20px;
+  margin-left: 0px;
+}
+
+button .fa-search {
+  display: none;
 }
 
 /* Les plus populaires */
@@ -855,7 +875,6 @@ nav {
 footer {
   display: flex;
 }
-
 
 .footer {
   margin-top: 30px;

@@ -36,7 +36,7 @@
     </div>
       <form method="post" action="traitement.php">
         <input type="search" placeholder="Marseille,France"/>
-        <button type="submit"><i class="fas fa-search"></i><div id="hidden_text">Rechercher</div></button>
+        <button type="submit"><i class="fas fa-search"></i><span id="hidden_text">Rechercher</span></button>
         
       </form>
   </div>
@@ -89,21 +89,20 @@
 </section>
 
 <div id="informations">
-  <div id="icone_info">
-  <i class="fas fa-info"></i></div>
+    <div id="icone_info">
+    <i class="fas fa-info"></i>
+    </div>
   <div id="phrase_info">
   Plus de 500 logements sont disponibles dans cette ville
-</div>
-</div>
-
   </div>
+</div>
 
 
 <!-- Les plus populaires -->
 
 <section id="heb_pop">
 
-<section id="fond_populaire">
+<div id="fond_populaire">
 
   <div id="titre_pop"><h2>Les plus populaires</h2>
       <i class="fas fa-chart-line fa-2x"></i></div>
@@ -155,12 +154,13 @@
       </div></a>
       </div>    
 
-</section>
+</div>
+
 
 <!-- Hebergements -->
 
 
-<section id="fond_hebergement">
+<div id="fond_hebergement">
 
       <h2 id="ancre_hebergement">Hébergements à Marseille</h2>
 
@@ -215,7 +215,7 @@
           
           </div></a>
 
-          <a href="#"class="fond_vignette_heb">
+          <a href="#" class="fond_vignette_heb">
           <img class="hebergements_ville" src="images/hebergements/small/hotel_mer.jpg" alt=photo_hotel_mer/>
           <div class="description_vignette_heb">
           <h4>Hôtel de la mer</h4>
@@ -264,7 +264,7 @@
 
           <strong><a href="#">Afficher plus</a></strong>
 
-</section>
+</div>
 </section>
 
 <!-- Activités -->
