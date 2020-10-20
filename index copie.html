@@ -109,9 +109,11 @@
 					<div id="all_vignettes_pop">
 						<a href="#">
 							<div class="fond_vignette_pop">
-								<img class="hebergements_pop" 
-								srcset="images/hebergements/small/hotel_soleil.jpg 532w,images/hebergements/medium/hotel_soleil.jpg 1063w,images/hebergements/large/hotel_soleil.jpg 2125w" sizes="100vw" 
-								src="images/hebergements/small/hotel_soleil.jpg" alt=photo_hotel_soleil_du_matin />
+								<picture>
+									<source class="hebergements_pop"
+								srcset="images/hebergements/medium/hotel_soleil.jpg" media="(min-width: 768px)"> 
+								<img src="images/hebergements/small/hotel_soleil.jpg" alt=photo_hotel_soleil_du_matin />
+							</picture>
 								<div class="description_vignette_pop">
 									<h4>Hôtel Le Soleil du matin</h4>
 									<p>
@@ -129,11 +131,7 @@
 						</a>
 						<a href="#">
 							<div class="fond_vignette_pop">
-								<img class="hebergements_pop"
-								srcset="images/hebergements/small/hotel_coeur_eau.jpg.jpg 504w,images/hebergements/medium/hotel_coeur_eau.jpg 1008w,images/hebergements/large/hotel_coeur_eau.jpg 2016w" 
-								sizes="100vw" 
-								src="images/hebergements/small/hotel_coeur_eau.jpg" alt=photo_hotel_coeur_eau.jpg/> 
-
+								<img class="hebergements_pop" src="images/hebergements/small/hotel_coeur_eau.jpg" alt=photo_hotel_coeur_eau/>
 								<div class="description_vignette_pop">
 									<h4>Au cœur de l'eau Chambres d'hôtes</h4>
 									<p>
@@ -155,9 +153,7 @@
 						</a>
 						<a href="#">
 							<div class="fond_vignette_pop">
-								<img class="hebergements_pop"
-								srcset="images/hebergements/small/hotel_bleu_blanc.jpg 532w,images/hebergements/medium/hotel_bleu_blanc.jpg 1063w,images/hebergements/large/hotel_bleu_blanc.jpg 2125w" sizes="100vw" 
-								src="images/hebergements/small/hotel_bleu_blanc.jpg" alt=photo_hotel_bleu_blanc.jpg/>
+								<img class="hebergements_pop" src="images/hebergements/small/hotel_bleu_blanc.jpg" alt=photo_hotel_bleu_blanc/>
 								<div class="description_vignette_pop">
 									<h4>Hôtel Tout bleu et Blanc</h4>
 									<p>
@@ -180,9 +176,7 @@
 					<h2 id="ancre_hebergement">Hébergements à Marseille</h2>
 					<div id="all_vignettes_heb">
 						<a href="#" class="fond_vignette_heb">
-							<img class="hebergements_ville" 
-							srcset="images/hebergements/small/auberge_cannebiere.jpg 532w,images/hebergements/medium/auberge_cannebiere.jpg 1063w,images/hebergements/large/auberge_cannebiere.jpg 2125w" sizes="100vw"
-							src="images/hebergements/small/auberge_cannebiere.jpg" alt=photo_auberge_cannebiere/>
+							<img class="hebergements_ville" src="images/hebergements/small/auberge_cannebiere.jpg" alt=photo_auberge_cannebiere/>
 							<div class="description_vignette_heb">
 								<h4>Auberge La Cannebière</h4>
 								<p>
