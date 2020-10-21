@@ -553,6 +553,11 @@ nav
 
 /* Formulaire */
 
+#recherche 
+{
+  margin-top: -10px;
+}
+
 #geolocalisation 
 {
 }
@@ -625,7 +630,7 @@ button .fa-search
 
 .hebergements_ville 
 {
-  width: 89%;
+  width: 91%;
   height: 140px;
   margin: auto; 
 }
