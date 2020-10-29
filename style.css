@@ -133,6 +133,7 @@ nav
 
 .titre_page {
   padding-left: 20px;
+  margin-top: 40px;
 }
 
 
@@ -411,11 +412,6 @@ color: #fff;
   padding-left: 20px;
 }
 
-#fond_activite 
-{
-  margin: 40px 5px;
-}
-
 #fond_activite h2
 {
   margin: 30px 15px;
@@ -430,7 +426,7 @@ color: #fff;
   border-radius: 20px;
   box-shadow: 2px 2px 10px #F2F2F2;
   height: 250px;
-  margin: 15px;
+  margin: 20px;
 }
 
 .fond_vignette_act_2 
@@ -442,7 +438,7 @@ color: #fff;
   border-radius: 20px;
   box-shadow: 2px 2px 10px #F2F2F2;
   height: 250px;
-  margin: 15px;
+  margin: 20px;
 }
 
 .fond_vignette_act_3 
@@ -454,7 +450,7 @@ color: #fff;
   border-radius: 20px;
   box-shadow: 2px 2px 10px #F2F2F2;
   height: 250px;
-  margin: 15px;
+  margin: 20px;
 }
 
 .activites_ville 
@@ -657,6 +653,9 @@ button .fa-search
   height: 30px;
 }
 
+main {
+  padding-right: 0px;
+}
 
 /* Hebergements */
 
@@ -664,6 +663,8 @@ button .fa-search
 {
   display: flex;
   flex-direction: row-reverse;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 
 #fond_hebergement 
@@ -671,7 +672,6 @@ button .fa-search
   background-color: #F2F2F2;
   border-radius: 20px;
   margin-right: 20px;
-  margin-left: 20px;
   height: auto;
   width: 80%;
 }
@@ -783,14 +783,19 @@ button .fa-search
 
 /* Activites */
 
+#ancre_activite
+{
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
 #all_vignettes_act 
 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 560px;
-  width: 100%;
-  margin-left: 5px;
+  height: 500px;
+  padding: 13px;
 }
 
 .fond_vignette_act_1 
@@ -800,8 +805,8 @@ button .fa-search
   border-radius: 10px;
   box-shadow: 2px 2px 10px #F2F2F2;
   height: 470px;
-  width: 23.2%;
-  margin-right: 0px;
+  width: 24%;
+  margin: auto;
 }
 
 .fond_vignette_act_1 .activites_ville 
@@ -820,8 +825,8 @@ button .fa-search
   border-radius: 10px;
   box-shadow: 2px 2px 10px #F2F2F2;
   height: 239px;
-  width: 23.2%;
-  margin-right: 0px;
+  width: 24%;
+  margin: auto;
 }
 
 .fond_vignette_act_2 .activites_ville 
@@ -840,8 +845,9 @@ button .fa-search
   border-radius: 10px;
   box-shadow: 2px 2px 10px #F2F2F2;
   height: 200px;
-  width: 23.2%;
-  margin-right: 0px;
+  width: 24%;
+  margin: auto;
+
 }
 
 .fond_vignette_act_3 .activites_ville 
@@ -977,7 +983,6 @@ button .fa-search
 #all_vignettes_pop 
 {
   display: flex;
-  padding-left: 5px;
   justify-content: space-between;
 }
 
@@ -992,7 +997,6 @@ button .fa-search
   flex-direction: column;
   height: 260px;
   width: 88%;
-  margin-left: 10px;
 }
 
 .hebergements_pop 
@@ -1028,6 +1032,7 @@ button .fa-search
 {
   margin-top: 30px;
   margin-bottom: 10px;
+  margin-left: 15px;
 }
 
 #all_vignettes_heb 
@@ -1042,7 +1047,6 @@ button .fa-search
   height: 250px;
   width: 45%;
   box-shadow: 2px 2px 10px #a0a0a0;
-  margin-bottom: 10px;
 }
 
 .hebergements_ville 
@@ -1066,11 +1070,9 @@ button .fa-search
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 480px;
-  align-items: center;
-  margin-top:-10px;
-  padding-right: 20px;
-  padding-left: 5px;
+  height: 500px;
+  padding: 8px;
+  margin-top: -30px;
 }
 
 .fond_vignette_act_1 
@@ -1081,7 +1083,7 @@ button .fa-search
   box-shadow: 2px 2px 10px #F2F2F2;
   height: 200px;
   width: 30%;
-  margin-right: 12px;
+  margin: auto;
 }
 
 .fond_vignette_act_1 .activites_ville 
@@ -1101,7 +1103,7 @@ button .fa-search
   box-shadow: 2px 2px 10px #F2F2F2;
   height: 200px;
   width: 30%;
-  margin-right: 12px;
+  margin: auto;
 }
 
 .fond_vignette_act_2 .activites_ville 
@@ -1121,7 +1123,7 @@ button .fa-search
   box-shadow: 2px 2px 10px #F2F2F2;
   height: 200px;
   width: 30%;
-  margin-right: 12px;
+  margin: auto;
 }
 
 .fond_vignette_act_3 .activites_ville 
